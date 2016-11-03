@@ -22,9 +22,17 @@ describe('Fizzbuzz returns values for different kinds of numbers', function () {
 	assert.equal(result, "Fizz");
 })
 
+
+describe('Fizznuzz returns values for different kinds of numbers', function () {
+	it('should return "Buzz" based on numbers divisible by 5', function () {
+	let result = fizz(5);
+	assert.equal(result, "Buzz");
+}); 
+
+
 });
 
-
+});
 // )}
 
 // UNCOMMENT THE SECTION BELOW FOR HARD MODE
