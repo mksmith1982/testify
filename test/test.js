@@ -15,8 +15,17 @@ describe('Fizzbuzz returns values for different kinds of numbers', function () {
     assert.equal(result, 4);
   });
 
-  // Your Tests Here
+
+describe('Fizzbuzz returns values for different kinds of numbers', function () {
+	it('should return "Fizz" based on numbers divisible by 3', function () {
+	let result = fizz(3);
+	assert.equal(result, "Fizz");
+})
+
 });
+
+
+// )}
 
 // UNCOMMENT THE SECTION BELOW FOR HARD MODE
 
@@ -239,4 +248,4 @@ describe('Fizzbuzz returns values for different kinds of numbers', function () {
 //     assert.equal(-11, item.sellIn);
 //   });
 
-// });
+});
