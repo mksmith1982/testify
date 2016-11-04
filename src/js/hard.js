@@ -5,14 +5,16 @@ class GildedRose {
     this.quality = quality;
   }
 
-  tick () {
+  tick () {  //________REGULAR ITEM_________
     if (this.name != 'Aged Brie' && this.name != 'Backstage passes to a TAFKAL80ETC concert') {
       if (this.quality > 0) {
-        if (this.name != 'Sulfuras, Hand of Ragnaros') {
-          this.quality = this.quality - 1;
-        }
+      	// if(this.sellIn < ) {
+    	if (this.name != 'Sulfuras, Hand of Ragnaros') {
+          	this.quality = this.quality - 1;
+        // }
+        }//---------------------------------
       }
-    } else {
+    } else {// ________BACKSTAGE PASSES________
       if (this.quality < 50) {
         this.quality = this.quality + 1;
         if (this.name == 'Backstage passes to a TAFKAL80ETC concert') {
@@ -24,11 +26,13 @@ class GildedRose {
           if (this.sellIn < 6) {
             if (this.quality < 50) {
               this.quality = this.quality + 1;
-            }
+            }//---------------------------------
           }
         }
       }
     }
+
+
     if (this.name != 'Sulfuras, Hand of Ragnaros') {
       this.sellIn = this.sellIn - 1;
     }
@@ -37,7 +41,7 @@ class GildedRose {
         if (this.name != 'Backstage passes to a TAFKAL80ETC concert') {
           if (this.quality > 0) {
             if (this.name != 'Sulfuras, Hand of Ragnaros') {
-              this.quality = this.quality - 1;
+              this.quality = this.quality - 3;
             }
           }
         } else {
