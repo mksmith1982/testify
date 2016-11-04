@@ -11,6 +11,13 @@ class GildedRose {
       	// if(this.sellIn < ) {
     	if (this.name != 'Sulfuras, Hand of Ragnaros') {
           	this.quality = this.quality - 1;
+  	
+  	if(this.name != 'Aged Brie' && this.name != 'Backstage passes to a TAFKAL80ETC concert') {
+  		if (this.name != 'Sulfuras, Hand of Ragnaros') {
+  			this.sellIn = this.sellIn;
+  			// this.quality = this.quality -1;
+  		}
+  	}
         // }
         }//---------------------------------
       }
@@ -41,7 +48,7 @@ class GildedRose {
         if (this.name != 'Backstage passes to a TAFKAL80ETC concert') {
           if (this.quality > 0) {
             if (this.name != 'Sulfuras, Hand of Ragnaros') {
-              this.quality = this.quality - 3;
+              this.quality = this.quality - 3;//THIS HELPS CONJURED ITEMS
             }
           }
         } else {
