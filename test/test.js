@@ -34,7 +34,10 @@ describe('Fizzbuzz returns values for different kinds of numbers', function () {
 	it('should return "FizzBuzz" based on numbers divisible by 15', function () {
 	let result = fizz(15);
 	assert.equal(result, "FizzBuzz");
-	})
+
+	// NOTE *****  TEST PASSES WHEN "FIZZ" IS ENTERED IN TEST #4 WHEN IT SHOULD EQUAL FIZZBUZZ//
+	// WHY DOES THIS OCCUR?   
+});
 });
 });
 
