@@ -20,20 +20,26 @@ describe('Fizzbuzz returns values for different kinds of numbers', function () {
 	it('should return "Fizz" based on numbers divisible by 3', function () {
 	let result = fizz(3);
 	assert.equal(result, "Fizz");
-})
+});
 
 
-describe('Fizznuzz returns values for different kinds of numbers', function () {
+describe('Fizzbuzz returns values for different kinds of numbers', function () {
 	it('should return "Buzz" based on numbers divisible by 5', function () {
 	let result = fizz(5);
 	assert.equal(result, "Buzz");
 }); 
 
 
+describe('Fizzbuzz returns values for different kinds of numbers', function () {
+	it('should return "FizzBuzz" based on numbers divisible by 15', function () {
+	let result = fizz(15);
+	assert.equal(result, "FizzBuzz");
+	})
+});
 });
 
 });
-// )}
+});
 
 // UNCOMMENT THE SECTION BELOW FOR HARD MODE
 
@@ -256,4 +262,4 @@ describe('Fizznuzz returns values for different kinds of numbers', function () {
 //     assert.equal(-11, item.sellIn);
 //   });
 
-});
+// });
